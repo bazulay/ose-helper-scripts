@@ -28,6 +28,7 @@ osm_default_subdomain=$SUBDOMAIN
 #ansible_sudo=true
 
 deployment_type=openshift-enterprise
+openshift_use_manageiq=True
 
 # uncomment the following to enable htpasswd authentication; defaults to DenyAllPasswordIdentityProvider
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/htpasswd'}]
